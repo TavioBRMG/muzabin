@@ -2,36 +2,80 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <title>Muzabin</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+    <link rel="shortcut icon" href="public/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>Home</title>
   </head>
   <body>
-    <style>
-        .nav-link {
-            color: #fff !important;
-        }
-    </style>
-    <nav class="navbar navbar-expand-lg d-flex justify-content-between" style="background-color: #282A36 !important">
-        <a class="navbar-brand align-self-center" href="#">
-          <img src="logo.png">
-        </a>
-        <ul class="navbar-nav align-self-center">
+    <!-- Wallpaper -->
+    <div class="wallpaper">
+        <div class="adjust"></div>
+      <svg height="641" viewBox="0 0 1365 641">
+        <path d="M0 0H1365V539.367C1365 539.367 1295.75 549.664 1258.84 562.344C1195.72 584.03 1092.5 625.264 1023.5 634.77C954.495 644.276 751.662 641.784 674.487 634.77C515.977 620.363 393.074 562.344 217.817 496.911C197.03 492.41 133.5 466.5 76.6095 482.425C19.7189 498.351 2 492.415 2 492.415H0V0Z" fill="#E0E3E7" />
+      </svg>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar nav navbar-expand-lg p-4">
+      <a class="noselect logo" href="https://muzabin.com.br">
+        <svg viewBox="0 0 36 23" fill="none">
+          <path d="M1 12.4935L10.0696 9.37579V22.6967H1V12.4935Z" fill="#1EB893" />
+          <path d="M12.9038 8.34601L21.9734 5.25146V22.6967H12.9038V8.34601Z" fill="#1EB893" />
+          <path d="M25.9413 3.99073L35.0108 1.15649V22.6967H25.9413V3.99073Z" fill="#1EB893" />
+          <path d="M1 12.4934L35.0108 1.15646" stroke="#1EB893" />
+        </svg>
+        <div>UZABIN</div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Produtos</a>
+            <a href="#">PRODUTOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Segmentos</a>
-          </li>
+            <a href="#">FORMATAÇÃO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre</a>
+            <a href="#">PROJETOS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">ARTES</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">CONFERÊNCIA</a>
           </li>
         </ul>
-      </nav>
-      Fiz uma alteração bem aqui :D
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <button class="sobre">Sobre</button>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col apresentacao"> Soluções <br> Técnológicas <br>
+          <p class="apresentacao-end">para otimizar sua rotina</p>
+          <p class="apresentacao-mini"> Se você está procurando por uma <br> parceria confiável e inovadora <br> na área de tecnologia, a Muzabin é a escolha certa! </p>
+          <button class="servicos">Serviços</button>
+        </div>
+        <img class="noselect apresentacao-img" src="public/img/fundo.png" draggable="false">
+      </div>
+    </div>
+    <div class="suporte" tabindex="1">
+        <svg class="suporte-svg" fill="none">
+            <path d="M1 2h22v15H13l-7 5v-5H1V2Z" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        <div class="suporte-menu">
+            <div class="suporte-menu-titulo">
+                INFORME SEU PROJETO
+            </div>
+            <div class="suporte-menu-content">
+              <input class="form-control shadow-none" type="text" placeholder="NOME">
+              <input class="form-control shadow-none mt-2" type="email" placeholder="EMAIL">
+              <textarea type="text" class="form-control shadow-none mt-2 suporte-menu-projeto" placeholder="PROJETO"></textarea>
+                <button class="suporte-menu-enviar mt-2">ENVIAR</button>
+            </div>
+        </div>
+    </div>
   </body>
 </html>
